@@ -1,0 +1,15 @@
+#exerciselist{
+    width: 50%;
+    color: green;
+    border: 5px solid black;
+}
+
+#notelist{
+    width: 50%;
+    color: green;
+    border: 5px solid black;
+}
+
+#mainlist{
+    display:flex;
+}
