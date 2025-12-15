@@ -13,3 +13,7 @@
 #mainlist{
     display:flex;
 }
+
+a.src {
+  margin-left: 12px;
+}
