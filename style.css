@@ -2,12 +2,14 @@
     width: 50%;
     color: green;
     border: 5px solid black;
+    padding: 10px;
 }
 
 #notelist{
     width: 50%;
     color: green;
     border: 5px solid black;
+    padding: 10px;
 }
 
 #mainlist{
@@ -16,4 +18,26 @@
 
 a.src {
   margin-left: 12px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.item p {
+  color: black;
+}
+
+p{
+    font-weight: bold;
+}
+
+a{
+    font-weight: bold;
+}
+
+body{
+    font-size: 18px;
 }
