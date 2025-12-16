@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .main{
+        width: 40%;
+        background-color: #cccccc;
+    }
+
+    .header{
+        padding-top: 10px;
+        margin-bottom: 15px;
+        font-size: 27px;
+    }
+
+    .main{
+        margin-top: -22px;
+    }
+
+    .main div{
+        margin-left: 5px;
+    }
+
+    .main .form{
+        display: flex;
+        gap: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .main div div div input{
+        width: 160px;
+        border-radius: 5px;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .main .form2{
+        margin-bottom: 20px;
+    }
+
+    .message{
+        margin-bottom: 20px;
+    }
+
+    .send{
+        padding-bottom: 50px;
+    }
+
+    .send button{
+        color: white;
+        background-color: #626262;
+        padding: 5px;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div>
+            <div>
+                <div>
+                    <h1 class="header">Get in touch with us by filling contact form below</h1>
+                </div>
+            </div>
+            <form action="">
+                <div>
+                    <div class="form">
+                        <input type="text" placeholder="*Enter your full name">
+                        <input type="text" placeholder="*Enter your full name">
+                    </div>
+                    <div class="form2">
+                        <input type="text" placeholder="*Enter your full name">
+                    </div>
+                    <div class="message">
+                        <textarea name="message" id="message" placeholder="*Your message here" cols="80" rows="13"></textarea>
+                        
+                    </div>
+                    <div class="send">
+                        <button type="submit">Send message</button>
+                        <span>*Please fill all require form field, thanks!</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

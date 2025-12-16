@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .main{
+        width: 50%;
+        border: 1px solid black;
+    }
+
+    .display input{
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 50px;
+        text-align: right;
+        padding-right: 12px;
+        line-height: 2;
+    }
+
+    .number{
+        display: flex;
+        gap: 0px;
+    }
+
+    .number button{
+        flex: 1;
+        background-color: #d2deec;
+        border: 1px solid black;
+        width: 100%;
+        padding: 40px;
+        font-size: 50px;
+        font-weight: bolder;
+        box-sizing: border-box;
+    }
+
+</style>
+
+<script>
+
+</script>
+
+<body>
+    <form action="">
+        <div class="main">
+            <div class="display">
+                <input type="text" readonly value="9 + 9" >
+            </div>
+            <div class="field">
+                <div class="number">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="number">
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>-</button>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="number">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>x</button>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="number">
+                    <button>C</button>
+                    <button>0</button>
+                    <button>=</button>
+                    <button>/</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

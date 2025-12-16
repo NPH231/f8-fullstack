@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        width: 50%;
+    }
+
+    .login .form{
+        margin: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .login form input{
+        width: 200px;
+        height: 20px;
+        border: 1.5px solid #8e99a3;
+    }
+
+    .login select{
+        height: 20px;
+        border: 1.5px solid #8e99a3;
+        background-color: white;
+        border: 1px solid #b9cff7;
+    }
+
+    .login .form label{
+        width: 100px;
+    }
+
+    .login .radio{
+        margin: 5px;
+        display: flex;
+    }
+
+    .radio p{
+        width: 110px;
+    }
+
+    .submitform{
+        margin-left: 110px;
+    }
+
+    .submitform button{
+        border: 2px solid rgb(72, 72, 255);
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+
+</style>
+<body>
+    <form class="main" action="">
+        <div class="login">
+            <div class="form">
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form">
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form">
+                <label for="text">City of Employment:</label>
+                <input type="text" id="text" name="text" required>
+            </div>
+
+            <div class="form">
+                <label for="webserver">Web server:</label>
+                <select type="text" id="webserver" name="webserver" placeholder="-- Choose a server --"  required>
+                <option value="0" disabled selected hidden>--- Choose a server ---</option>
+                <option value="1">server1</option>
+                <option value="2">server2</option>
+                </select>
+            </div>
+
+            <div class="radio">
+                <p>Please specify<br> your role:</p>
+                <div>
+                    <input type="radio" id="role1" name="role" value="Admin" required>
+                    <label for="role1">Admin</label><br>
+                    <input type="radio" id="role2" name="role" value="Engineer" required>
+                    <label for="role2">Engineer</label><br>
+                    <input type="radio" id="role3" name="role" value="Manager" required>
+                    <label for="role3">Manager</label><br>
+                    <input type="radio" id="role4" name="role" value="Guest" required>
+                    <label for="role4">Guest</label><br>
+                </div>
+            </div>
+
+            <div class="radio">
+                <p>Single Sign-on<br> to the following:</p>
+                <div>
+                    <input type="checkbox" id="sign-on-mail" name="sign-on" value="mail" required>
+                    <label for="role">Mail</label><br>
+                    <input type="checkbox" id="sign-on-payroll" name="sign-on" value="Payroll" required>
+                    <label for="text">Payroll</label><br>
+                    <input type="checkbox" id="sign-on-self-service" name="sign-on" value="Self-service" required>
+                    <label for="text">Self-service</label><br>
+                </div>
+            </div>
+        </div>
+        <div class="submitform">
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
