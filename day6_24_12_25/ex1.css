@@ -1,0 +1,209 @@
+    :root{
+      --bg: #2f4256;
+      --yellow: #f5c400;     
+      --white: #fff;
+      --input-bg: #fff;
+      --input-bg-hover: #ddd;
+    }
+
+    *{ box-sizing: border-box; margin: 0; padding: 0; }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 30px;
+      background: #ffffff;
+    }
+
+    .subscribe{
+      width: min(980px, 100%);
+      background: var(--bg);
+      color: var(--white);
+      border-radius: 10px;
+      padding: 28px 36px;
+      box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+    }
+
+    .subscribe h2{
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .subscribe h2 .hl{ color: var(--yellow); }
+
+    .subscribe p{
+      opacity: 0.95;
+      line-height: 1.5;
+      margin-bottom: 18px;
+      max-width: 740px;
+    }
+
+    .form-row{
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .form-row input{
+      width: 260px;
+      height: 44px;
+      padding: 0 14px;
+      border-radius: 4px;
+      border: 1px solid rgba(0,0,0,0.25);
+      outline: none;
+      background: var(--input-bg);
+      color: #333;
+      transition: background 0.25s ease;
+    }
+
+    .form-row input::placeholder{
+      color: #b7b7b7;
+      transition: color 0.25s ease;
+    }
+
+    .form-row button{
+      height: 44px;
+      padding: 0 20px;
+      border: 1px solid rgba(0,0,0,0.25);
+      border-radius: 4px;
+      background: #f2d65a; 
+      color: #1a1a1a;      
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+
+  
+    .subscribe:hover input{
+      background: var(--input-bg-hover); 
+    }
+    .subscribe:hover input::placeholder{
+      color: var(--yellow); 
+    }
+    .subscribe:hover button{
+      background: var(--yellow); 
+      color: #fff;               
+    }
+
+        .quote-box{
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px 60px;
+    }
+
+    .quote-box p{
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    font-style: italic;
+    color: #333;
+    font-weight: 560;
+    }
+
+    .quote-icon{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #555;
+    font-family: serif;
+    }
+
+    .quote-icon.left{
+    top: 0;
+    left: 0;
+    }
+
+    .quote-icon.right{
+    bottom: 0;
+    right: 0;
+    }
+
+    .name-list{
+  list-style: none; /* bỏ bullet mặc định */
+  padding: 0;
+  margin: 20px;
+  font-family: "Times New Roman", serif;
+  font-size: 28px;
+}
+
+.name-list li{
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 8px;
+}
+
+.name-list li::before{
+  content: "😊";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.article{
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #374151;
+}
+
+.article h2{
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.article p{
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+.code{
+  background: #eef2ff;
+  color: black;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.95em;
+  font-weight: 900;
+}
+
+.article a{
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.article a{
+  text-decoration: underline;
+}
+
+
+.promo-box{
+  margin-top: 28px;
+  padding: 24px 28px;
+  border: 2px solid #8b90c9;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.promo-box p{
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+
+
+.promo-link{
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: underline;
+}
+
